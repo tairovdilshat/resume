@@ -1,0 +1,108 @@
+/* Цвета вынесены в переменные, чтобы легко менять тему */
+.page {
+  --bg: #f3f4f6;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --accent: #2563eb;
+ 
+  min-height: 100vh;
+  padding: 24px 16px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+ 
+.page.dark {
+  --bg: #111827;
+  --card: #1f2937;
+  --text: #f3f4f6;
+  --muted: #9ca3af;
+  --accent: #60a5fa;
+}
+ 
+.resume {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px;
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+ 
+.theme-btn {
+  float: right;
+  padding: 6px 12px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+}
+ 
+.header {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--accent);
+}
+ 
+.header h1 {
+  margin: 0;
+}
+ 
+.subtitle {
+  margin: 4px 0 0;
+  color: var(--muted);
+}
+ 
+.section {
+  margin-bottom: 24px;
+}
+ 
+.section h2 {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 20px;
+}
+ 
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+ 
+.skills li {
+  padding: 4px 12px;
+  border-radius: 16px;
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 14px;
+}
+ 
+.item {
+  margin-bottom: 12px;
+}
+ 
+.item h3 {
+  margin: 0;
+  font-size: 16px;
+}
+ 
+.period {
+  color: var(--muted);
+  font-size: 14px;
+}
+ 
+.item p {
+  margin: 4px 0 0;
+}
+ 
+@media (max-width: 600px) {
+  .resume {
+    padding: 20px;
+  }
+}
+ 
